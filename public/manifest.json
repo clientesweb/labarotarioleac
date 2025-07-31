@@ -1,0 +1,74 @@
+{
+  "name": "LEAC - Laboratorio Especializado en Análisis Clínicos",
+  "short_name": "LEAC",
+  "description": "Laboratorio bioquímico líder en Santa Rosa de Calamuchita, Embalse y Villa del Dique. Análisis clínicos, bacteriológicos y veterinarios con tecnología moderna, resultados rápidos y atención personalizada. Más de 15 años de experiencia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["medical", "health", "laboratory"],
+  "icons": [
+    {
+      "src": "/favicon-leac.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-leac.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image-leac.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Reservar Turno",
+      "short_name": "Turno",
+      "description": "Reservar turno por WhatsApp",
+      "url": "https://wa.me/5493571360087?text=Hola,%20me%20interesa%20reservar%20un%20turno%20en%20el%20laboratorio%20LEAC",
+      "icons": [
+        {
+          "src": "/favicon-leac.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Servicios",
+      "short_name": "Servicios",
+      "description": "Ver servicios de análisis clínicos",
+      "url": "/servicios",
+      "icons": [
+        {
+          "src": "/favicon-leac.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Información de contacto y ubicaciones",
+      "url": "/contacto",
+      "icons": [
+        {
+          "src": "/favicon-leac.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
