@@ -85,11 +85,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0" />
-                <span>info@laboratorioleac.com.ar</span>
+                <span>laboratoriosleac@gmail.com</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0 mt-1" />
-                <span>Santa Rosa de Calamuchita, Córdoba, Argentina</span>
+                <span>Valle de Calamuchita, Córdoba, Argentina</span>
               </div>
             </div>
           </div>
