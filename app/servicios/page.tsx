@@ -67,7 +67,7 @@ export default function ServiciosPage() {
       color: "red",
       servicios: [
         "Hemograma completo",
-        "Bioquímica sanguínea",
+        "Química clínica",
         "Perfil lipídico (colesterol, triglicéridos)",
         "Glucemia",
         "Hemoglobina glicosilada",
@@ -432,7 +432,7 @@ export default function ServiciosPage() {
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/20 rounded-full flex items-center justify-center mr-4">
                     <span className="text-2xl">🦠</span>
                   </div>
-                  <h3 className="font-title text-xl sm:text-2xl">PANELES VIRALES</h3>
+                  <h3 className="font-title text-xl sm:text-2xl">ANALISIS VIROLOGICOS</h3>
                 </div>
                 <p className="font-text-regular text-sm sm:text-base text-red-100">
                   Detección de virus respiratorios y otras enfermedades infecciosas
