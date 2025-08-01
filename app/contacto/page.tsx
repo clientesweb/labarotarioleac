@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Centro Médico Santa Rosa",
     "San Martín Villa del Dique",
     "Malvinas Argentinas Embalse",
-    "info@laboratorioleac.com.ar",
+    "laboratoriosleac@gmail.com",
     "3571 36-0087",
     "laboratorio Córdoba contacto",
   ],
@@ -76,7 +76,7 @@ export default function ContactoPage() {
               "@type": "MedicalBusiness",
               name: "LEAC - Laboratorio Especializado en Análisis Clínicos",
               telephone: "+54-3571-36-0087",
-              email: "info@laboratorioleac.com.ar",
+              email: "laboratoriosleac@gmail.com",
               url: APP_URL,
               address: [
                 {
