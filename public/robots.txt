@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://laboratorioleac.com.ar/sitemap.xml
+Sitemap: https://www.laboratoriosleac.com.ar/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
