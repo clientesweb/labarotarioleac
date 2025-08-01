@@ -8,7 +8,7 @@ import { locations } from "@/data/locations"
 import ContactForm from "@/components/contact-form"
 import MobileMenu from "@/components/mobile-menu"
 
-const APP_URL = "https://laboratorio-leac.vercel.app"
+const APP_URL = "https://www.laboratoriosleac.com.ar"
 
 export const metadata: Metadata = {
   title: "Contacto y Ubicaciones | LEAC - Laboratorio en Santa Rosa, Embalse y Villa del Dique",
@@ -148,37 +148,26 @@ export default function ContactoPage() {
             </Link>
 
             {/* Right Navigation - Desktop */}
-            <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-              <nav className="flex items-center space-x-6 xl:space-x-8">
-                <Link
-                  href="/resultados"
-                  className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
-                >
-                  Resultados
-                </Link>
-                <Link
-                  href="/podcast"
-                  className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
-                >
-                  Podcast
-                </Link>
-                <Link
-                  href="/contacto"
-                  className="font-text text-blue-600 font-text-bold transition-colors text-sm xl:text-base"
-                >
-                  Contacto
-                </Link>
-              </nav>
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               <Link
-                href="https://wa.me/5493571360087?text=Hola,%20me%20interesa%20reservar%20un%20turno%20en%20el%20laboratorio%20LEAC"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resultados"
+                className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
               >
-                <Button className="font-text-bold bg-blue-600 hover:bg-blue-700 text-sm px-4 py-2">
-                  Reservar Turno
-                </Button>
+                Resultados
               </Link>
-            </div>
+              <Link
+                href="/podcast"
+                className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
+              >
+                Podcast
+              </Link>
+              <Link
+                href="/contacto"
+                className="font-text text-blue-600 font-text-bold transition-colors text-sm xl:text-base"
+              >
+                Contacto
+              </Link>
+            </nav>
 
             {/* Mobile Menu */}
             <MobileMenu />
