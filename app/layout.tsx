@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 const APP_NAME = "LEAC - Laboratorio Especializado en Análisis Clínicos"
 const APP_DESCRIPTION =
   "Laboratorio bioquímico líder en Santa Rosa de Calamuchita, Embalse y Villa del Dique. Análisis clínicos, bacteriológicos y veterinarios con tecnología moderna, resultados rápidos y atención personalizada. Más de 15 años de experiencia."
-const APP_URL = "https://laboratorio-leac.vercel.app"
+const APP_URL = "https://www.laboratoriosleac.com.ar"
 const OG_IMAGE_URL = `${APP_URL}/og-image-leac.jpg`
 const FAVICON_URL = "/favicon-leac.png"
 const THEME_COLOR = "#2563eb"
@@ -157,7 +157,7 @@ export const metadata: Metadata = {
     "geo.position": "-32.0667;-64.5333",
     ICBM: "-32.0667, -64.5333",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
