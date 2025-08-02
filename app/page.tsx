@@ -9,7 +9,62 @@ import MobileMenu from "@/components/mobile-menu"
 import ReviewsCarousel from "@/components/reviews-carousel"
 import ObrasSocialesSlider from "@/components/obras-sociales-slider"
 import { locations } from "@/data/locations"
-import PodcastSection from "@/components/podcast-section"
+
+const APP_URL = "https://www.laboratoriosleac.com.ar"
+
+export const metadata = {
+  metadataBase: new URL(APP_URL),
+  title: "LEAC - Laboratorio Especializado en Análisis Clínicos | Villa del Dique, Santa Rosa, Embalse",
+  description:
+    "Laboratorio de análisis clínicos en Villa del Dique, Santa Rosa de Calamuchita y Embalse. Análisis de sangre, orina, hormonales, microbiología y más. Tecnología de última generación.",
+  keywords:
+    "laboratorio, análisis clínicos, Villa del Dique, Santa Rosa de Calamuchita, Embalse, análisis de sangre, análisis de orina, microbiología, hormonales, LEAC",
+  authors: [{ name: "LEAC Laboratorio" }],
+  creator: "LEAC - Laboratorio Especializado en Análisis Clínicos",
+  publisher: "LEAC Laboratorio",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "LEAC - Laboratorio Especializado en Análisis Clínicos",
+    description:
+      "Laboratorio de análisis clínicos en Villa del Dique, Santa Rosa de Calamuchita y Embalse. Tecnología de última generación y atención personalizada.",
+    url: APP_URL,
+    siteName: "LEAC Laboratorio",
+    images: [
+      {
+        url: "/og-image-leac.jpg",
+        width: 1200,
+        height: 630,
+        alt: "LEAC - Laboratorio Especializado en Análisis Clínicos",
+      },
+    ],
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LEAC - Laboratorio Especializado en Análisis Clínicos",
+    description: "Laboratorio de análisis clínicos en Villa del Dique, Santa Rosa de Calamuchita y Embalse.",
+    images: ["/og-image-leac.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "tu-codigo-de-verificacion-google",
+  },
+}
 
 export default function HomePage() {
   const newsArticles = [
@@ -29,6 +84,49 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            name: "LEAC - Laboratorio Especializado en Análisis Clínicos",
+            description:
+              "Laboratorio de análisis clínicos especializado en análisis de sangre, orina, hormonales, microbiología y más.",
+            url: APP_URL,
+            logo: `${APP_URL}/images/leac-logo.jpg`,
+            image: `${APP_URL}/og-image-leac.jpg`,
+            telephone: "+54-3571-360087",
+            address: [
+              {
+                "@type": "PostalAddress",
+                streetAddress: "Av. Costanera 1081",
+                addressLocality: "Villa del Dique",
+                addressRegion: "Córdoba",
+                addressCountry: "AR",
+              },
+              {
+                "@type": "PostalAddress",
+                streetAddress: "Av. San Martín 1285",
+                addressLocality: "Santa Rosa de Calamuchita",
+                addressRegion: "Córdoba",
+                addressCountry: "AR",
+              },
+              {
+                "@type": "PostalAddress",
+                streetAddress: "Belgrano 86",
+                addressLocality: "Embalse",
+                addressRegion: "Córdoba",
+                addressCountry: "AR",
+              },
+            ],
+            openingHours: "Mo-Fr 07:00-12:00,15:00-19:00 Sa 08:00-12:00",
+            sameAs: ["https://www.instagram.com/laboratorio.leac/", "https://www.facebook.com/laboratorio.leac"],
+          }),
+        }}
+      />
+
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-40">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -263,8 +361,52 @@ export default function HomePage() {
       {/* Sección de Reseñas */}
       <ReviewsCarousel />
 
-      {/* Sección de Podcast */}
-      <PodcastSection />
+      {/* Sección de Podcast - Reemplazada con imagen */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-purple-50 via-blue-50 to-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="max-w-4xl mx-auto text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="font-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-gray-900 mb-4 sm:mb-6">
+              GENERACIÓN GEN
+            </h2>
+            <p className="font-text-regular text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+              Nuestro podcast sobre genética y genoma humano. Divulgación científica accesible para todos.
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <Image
+                src="/images/generacion-gen.webp"
+                alt="Generación GEN - Podcast sobre genética y genoma humano"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link href="/podcast">
+              <Button
+                size="lg"
+                className="font-text-bold bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-base rounded-lg transition-colors duration-300 mr-4"
+              >
+                Escuchar Podcast
+              </Button>
+            </Link>
+            <Link href="https://open.spotify.com/show/4VqMXRuihVdssdwrg5lEuH" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                variant="outline"
+                className="font-text-bold border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 text-base rounded-lg transition-colors duration-300 bg-transparent"
+              >
+                Ver en Spotify
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Sección de Novedades */}
       <section id="novedades" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
