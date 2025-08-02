@@ -17,10 +17,28 @@ export default function SpotifyEmbed({
   height = 352,
   className = "",
 }: SpotifyEmbedProps) {
+  // Fix the embed URL format
   const embedUrl =
     type === "episode" && episodeId
-      ? `https://open.spotify.com/embed/episode/${episodeId}?utm_source=generator&theme=0`
-      : `https://open.spotify.com/embed/show/${showId}?utm_source=generator&theme=0`
+      ? `https://open.spotify.com/embed/episode/${episodeId}?utm_source=generator`
+      : showId
+        ? `https://open.spotify.com/embed/show/${showId}?utm_source=generator`
+        : null
+
+  // Don't render if no valid URL
+  if (!embedUrl) {
+    return (
+      <div className={`w-full ${className}`}>
+        {title && <h3 className="font-text-bold text-xl sm:text-2xl text-gray-900 mb-4 text-center">{title}</h3>}
+        <div
+          className="relative w-full overflow-hidden rounded-xl shadow-lg bg-gray-100 flex items-center justify-center"
+          style={{ height }}
+        >
+          <p className="text-gray-500 font-text-regular">Contenido de Spotify no disponible</p>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className={`w-full ${className}`}>
