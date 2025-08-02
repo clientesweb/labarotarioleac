@@ -215,7 +215,7 @@ export default function PodcastPage() {
             <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <Image
-                  src="/images/generacion-gen.webp"
+                  src="generacion-gen.webp"
                   alt="Generación GEN - Todos los episodios disponibles en Spotify"
                   width={800}
                   height={600}
