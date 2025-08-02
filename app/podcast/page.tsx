@@ -5,10 +5,9 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Headphones, Play, Download, Dna, ExternalLink, Youtube } from "lucide-react"
 import WhatsAppFloatButton from "@/components/whatsapp-float-button"
 import MobileMenu from "@/components/mobile-menu"
-import SpotifyEmbed from "@/components/spotify-embed"
 import { podcastInfo } from "@/data/podcast-episodes"
 
-const APP_URL = "https://laboratorio-leac.vercel.app"
+const APP_URL = "https://www.laboratoriosleac.com.ar"
 
 export default function PodcastPage() {
   return (
@@ -202,7 +201,7 @@ export default function PodcastPage() {
         </div>
       </section>
 
-      {/* Main Spotify Show Embed */}
+      {/* Podcast Image Section - Reemplaza el embed de Spotify */}
       <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto">
@@ -213,7 +212,18 @@ export default function PodcastPage() {
               </p>
             </div>
 
-            <SpotifyEmbed showId={podcastInfo.spotifyShowId} title="" height={500} className="mb-8 sm:mb-12" />
+            <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <Image
+                  src="/images/generacion-gen.webp"
+                  alt="Generación GEN - Todos los episodios disponibles en Spotify"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
 
             <div className="text-center mb-8">
               <Link href={podcastInfo.spotifyUrl} target="_blank" rel="noopener noreferrer">
@@ -222,7 +232,7 @@ export default function PodcastPage() {
                   className="font-text-bold bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-base rounded-lg transition-colors duration-300"
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  Ver Más en Spotify
+                  Escuchar en Spotify
                 </Button>
               </Link>
             </div>
