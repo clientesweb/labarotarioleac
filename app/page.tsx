@@ -376,7 +376,7 @@ export default function HomePage() {
           <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <Image
-                src="/images/generacion-gen.webp"
+                src="/generacion-gen.webp"
                 alt="Generación GEN - Podcast sobre genética y genoma humano"
                 width={800}
                 height={600}
@@ -395,7 +395,7 @@ export default function HomePage() {
                 Escuchar Podcast
               </Button>
             </Link>
-            <Link href="https://open.spotify.com/show/4VqMXRuihVdssdwrg5lEuH" target="_blank" rel="noopener noreferrer">
+            <Link href="https://open.spotify.com/show/492R7IzThqsGNlJKcL2cBy?si=szgZN33VTDKkciKfPbs6pg" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 variant="outline"
