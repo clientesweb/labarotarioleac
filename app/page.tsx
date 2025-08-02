@@ -71,26 +71,37 @@ export default function HomePage() {
             </Link>
 
             {/* Right Navigation - Desktop */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+              <nav className="flex items-center space-x-6 xl:space-x-8">
+                <Link
+                  href="/resultados"
+                  className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
+                >
+                  Resultados
+                </Link>
+                <Link
+                  href="/podcast"
+                  className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
+                >
+                  Podcast
+                </Link>
+                <Link
+                  href="/contacto"
+                  className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
+                >
+                  Contacto
+                </Link>
+              </nav>
               <Link
-                href="/resultados"
-                className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
+                href="https://wa.me/5493571360087?text=Hola,%20me%20interesa%20reservar%20un%20turno%20en%20el%20laboratorio%20LEAC"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Resultados
+                <Button className="font-text-bold bg-blue-600 hover:bg-blue-700 text-sm px-4 py-2">
+                  Reservar Turno
+                </Button>
               </Link>
-              <Link
-                href="/podcast"
-                className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
-              >
-                Podcast
-              </Link>
-              <Link
-                href="/contacto"
-                className="font-text text-gray-700 hover:text-blue-600 transition-colors text-sm xl:text-base"
-              >
-                Contacto
-              </Link>
-            </nav>
+            </div>
 
             {/* Mobile Menu */}
             <MobileMenu />
