@@ -82,10 +82,12 @@ export default function Footer() {
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0" />
                 <span>+54 9 3571 36-0087</span>
+                <span>3571 36-0087 / 3571 578763</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0" />
                 <span>laboratoriosleac@gmail.com</span>
+<span>leac@live.com.ar</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0 mt-1" />
