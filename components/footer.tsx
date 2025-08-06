@@ -81,13 +81,13 @@ export default function Footer() {
             <div className="space-y-2 text-sm sm:text-base text-gray-400 font-text-regular">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0" />
-                <span>+54 9 3571 36-0087/</span>
+                <span>+54 9 3571 36-0087/ </span>
 
-                <span>3571 36-0087 / 3571 578763 578763</span>
+                <span>3571 36-0087 / 3571 578763</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-blue-400 flex-shrink-0" />
-                <span>laboratoriosleac@gmail.com/</span>
+                <span>laboratoriosleac@gmail.com /</span>
 
 <span>leac@live.com.ar</span>
               </div>
