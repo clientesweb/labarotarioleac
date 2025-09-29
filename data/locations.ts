@@ -20,7 +20,7 @@ export const locations = [
   {
     name: "Sede Embalse",
     address: "Malvinas Argentinas 28, Embalse, Córdoba",
-    phone: "+54 9 3571 36-0087",
+    phone: "+54 9 3571 36-0087 / +54 9 3571-578763",
     email: "laboratoriosleac@gmail.com",
     hours: "De lunes a viernes: 7:00 a 14:00 hs | 18:30 a 20:30 hs",
     mapLink: "https://g.co/kgs/yabyhJX",
