@@ -122,7 +122,7 @@ export default function Footer() {
 
         {/* Derechos de Autor y Desarrollado por */}
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500 font-text-regular space-y-2">
-          <p>&copy; {currentYear} LEAC. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} LABORATORIOS LEAC. FUNDADORES Gagliardi Pablo Antonio - Ivana soledad lucero</p>
           <p className="font-text-regular text-sm text-gray-400 mt-2">
             Desarrollado por{" "}
             <Link
