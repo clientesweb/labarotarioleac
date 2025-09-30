@@ -15,8 +15,7 @@ export default function NosotrosSection() {
                 NOSOTROS
               </h2>
               <p className="font-text-regular text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
-                En LEAC somos un laboratorio bioquímico comprometido con tu salud. Nos especializamos en estudios
-                clínicos, con tecnología moderna, rapidez en los resultados y un trato humano.
+              En LEAC somos un laboratorio bioquímico comprometido con tu salud desde el 30 de octubre de 2008. Agradecemos la confianza de cada paciente y el legado de nuestros fundadores, el Dr. Pablo Antonio Gagliardi (M.P. 4278) y la Sra. Ivana Soledad Lucero.
               </p>
             </div>
 
