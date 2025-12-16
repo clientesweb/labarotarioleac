@@ -95,7 +95,7 @@ export default function HomePage() {
             description:
               "Laboratorio de análisis clínicos especializado en análisis de sangre, orina, hormonales, microbiología y más.",
             url: APP_URL,
-            logo: `${APP_URL}/images/leac-logo.jpg`,
+            logo: `${APP_URL}/images/leac-logo.webp`,
             image: `${APP_URL}/og-image-leac.jpg`,
             telephone: "+54-3571-360087",
             address: [
@@ -159,7 +159,7 @@ export default function HomePage() {
               className="flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
             >
               <Image
-                src="/images/leac-logo.jpg"
+                src="/images/leac-logo.webp"
                 alt="LEAC - Laboratorio Especializado en Análisis Clínicos"
                 width={120}
                 height={38}
@@ -212,25 +212,20 @@ export default function HomePage() {
         {/* Banner Carousel */}
         <BannerCarousel />
 
-        {/* Banner Inauguración - Pegado sin espacio y centrado */}
+        {/* Banner Navidad - Pegado sin espacio y centrado */}
         <section className="relative w-full overflow-hidden" style={{ width: "100vw", marginLeft: "calc(50% - 50vw)" }}>
-          <Link
-            href="https://www.instagram.com/reel/DLz6YUdMNSS/?igsh=bDBqcmFmdDNpZWQx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full"
-          >
+          <div className="block w-full">
             <div className="relative w-full h-[150px] xs:h-[180px] sm:h-[220px] md:h-[280px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] bg-white">
               <Image
-                src="/images/inaguracion-leac-final-santa-rosa-actualizado.webp"
-                alt="Inauguramos Laboratorio LEAC en Santa Rosa de Calamuchita - ¡Conoce más!"
+                src="/images/banner-navidad.webp"
+                alt="¡Felices Fiestas! - Laboratorio LEAC"
                 fill
                 className="object-contain hover:scale-[1.02] transition-transform duration-300"
                 sizes="100vw"
                 loading="lazy"
               />
             </div>
-          </Link>
+          </div>
         </section>
       </div>
 
@@ -395,7 +390,11 @@ export default function HomePage() {
                 Escuchar Podcast
               </Button>
             </Link>
-            <Link href="https://open.spotify.com/show/492R7IzThqsGNlJKcL2cBy?si=szgZN33VTDKkciKfPbs6pg" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://open.spotify.com/show/492R7IzThqsGNlJKcL2cBy?si=szgZN33VTDKkciKfPbs6pg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 size="lg"
                 variant="outline"
