@@ -13,11 +13,11 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center mb-4">
               <Image
-                src="/images/leac-logo-blanco.png"
+                src="/images/leac-logo.webp"
                 alt="LEAC - Laboratorio Especializado en Análisis Clínicos"
                 width={140}
                 height={45}
-                className="h-10 w-auto"
+                className="h-10 w-auto brightness-0 invert"
               />
             </Link>
             <p className="font-text-regular text-sm sm:text-base leading-relaxed text-gray-400">
